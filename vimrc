@@ -28,7 +28,7 @@ set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
 
 set wrap                          " Turn on line wrapping.
-set scrolloff=3                   " Show 3 lines of context around the cursor.
+set scrolloff=4                   " Show 3 lines of context around the cursor.
 
 set title                         " Set the terminal's title
 
@@ -49,6 +49,7 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 
 " Or use vividchalk
 colorscheme topfunky-light
+
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
@@ -77,3 +78,7 @@ map <leader>tm :tabmove
 "
 " KB shortcuts
 set pastetoggle=<F2>
+nmap <leader>l :set list!<CR>
+
+" Show hidden characters using these
+set listchars=tab:▸\ ,trail:•,eol:¬
