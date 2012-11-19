@@ -47,10 +47,6 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-" Or use vividchalk
-colorscheme vividchalk
-
-
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -82,3 +78,8 @@ nmap <leader>l :set list!<CR>
 
 " Show hidden characters using these
 set listchars=tab:▸\ ,trail:•,eol:¬
+
+" use the pretty chalk colors
+" using directive twice ensures correct bg transparency
+colorscheme vividchalk
+colorscheme vividchalk
