@@ -12,6 +12,7 @@ runtime macros/matchit.vim        " Load the matchit plugin.
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 "
 
 set showcmd                       " Display incomplete commands.
