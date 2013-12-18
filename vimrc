@@ -2,6 +2,7 @@
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
 set nocompatible                  " Must come first because it changes other options.
+execute pathogen#infect()         
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
@@ -92,3 +93,4 @@ set listchars=tab:▸\ ,trail:•,eol:¬
 " using directive twice ensures correct bg transparency
 colorscheme vividchalk
 colorscheme vividchalk
+
